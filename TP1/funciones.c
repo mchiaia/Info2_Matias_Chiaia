@@ -7,11 +7,10 @@
 #include "stdio.h"
 #include "string.h"
 
-char articulo[90];
-articulos_t articulos[CANT_ARTICULOS] = {0};
-
-void Cargar_fichas(void) {
+void Cargar_fichas(articulos_t articulos[]) {
     int opc = 0, i, articulo_index, sucursal;
+    char articulo[90];
+
     do {
         printf("Ingrese la descripcion del articulo: ");
         scanf("%s", articulo);
@@ -36,7 +35,7 @@ void Cargar_fichas(void) {
     } while (opc == 1);
 }
 
-void Impresion_fichas(void) {
+void Impresion_fichas(articulos_t articulos[]) {
 
 
     int i = 0;
@@ -50,8 +49,10 @@ void Impresion_fichas(void) {
     }
 }
 
-void Ordenamiento(void) {
+void Ordenamiento(articulos_t articulos[]) {
     int opc = 0, i, articulo_index;
+    char articulo[90];
+
     for (opc = 1; opc < CANT_ARTICULOS; opc++) {
         for (i = 0; i < CANT_ARTICULOS - 1; i++) {
             if (articulos[i].total < articulos[i + 1].total) {
@@ -79,13 +80,13 @@ void Ordenamiento(void) {
     }
 }
 
-void Impresion_fichas_ordenadas(void) {
+void Impresion_fichas_ordenadas(articulos_t articulos[]) {
 
 
     printf("\n\n###################################");
     printf("\n##############ORDENADO################");
     printf("\n################################### \n");
 
-    Impresion_fichas();
+    Impresion_fichas(articulos);
 
 }
