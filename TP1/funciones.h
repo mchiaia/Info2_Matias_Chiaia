@@ -18,9 +18,9 @@ typedef struct {
         int total;
 }articulos_t;
 
-void Cargar_fichas(articulos_t articulos[]);
-void Impresion_fichas(articulos_t articulos[]);
-void Ordenamiento(articulos_t articulos[]);
-void Impresion_fichas_ordenadas(articulos_t articulos[]);
+void Cargar_fichas(articulos_t *articulos);
+void Impresion_fichas(articulos_t *articulos);
+void Ordenamiento(articulos_t *articulos);
+void Impresion_fichas_ordenadas(articulos_t *articulos);
 
 #endif //INFO2_MATIAS_CHIAIA_FUNCIONES_H

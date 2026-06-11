@@ -7,7 +7,7 @@
 #include "stdio.h"
 #include "string.h"
 
-void Cargar_fichas(articulos_t articulos[]) {
+void Cargar_fichas(articulos_t *articulos) {
     int opc = 0, i, articulo_index, sucursal;
     char articulo[90];
 
@@ -35,7 +35,7 @@ void Cargar_fichas(articulos_t articulos[]) {
     } while (opc == 1);
 }
 
-void Impresion_fichas(articulos_t articulos[]) {
+void Impresion_fichas(articulos_t *articulos) {
 
 
     int i = 0;
@@ -49,7 +49,7 @@ void Impresion_fichas(articulos_t articulos[]) {
     }
 }
 
-void Ordenamiento(articulos_t articulos[]) {
+void Ordenamiento(articulos_t *articulos) {
     int opc = 0, i, articulo_index;
     char articulo[90];
 
@@ -80,7 +80,7 @@ void Ordenamiento(articulos_t articulos[]) {
     }
 }
 
-void Impresion_fichas_ordenadas(articulos_t articulos[]) {
+void Impresion_fichas_ordenadas(articulos_t *articulos) {
 
 
     printf("\n\n###################################");
