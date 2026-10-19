@@ -1,0 +1,245 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+  <storageModule moduleId="org.eclipse.cdt.core.settings">
+    <cconfiguration id="cdt.managedbuild.config.gnu.mingw.exe.debug.21106709">
+      <storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="cdt.managedbuild.config.gnu.mingw.exe.debug.21106709" moduleId="org.eclipse.cdt.core.settings" name="Debug">
+        <externalSettings />
+        <extensions>
+          <extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser" />
+          <extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser" />
+          <extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser" />
+          <extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser" />
+        </extensions>
+      </storageModule>
+      <storageModule moduleId="cdtBuildSystem" version="4.0.0">
+        <configuration artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug" cleanCommand="rm -rf" description="" id="cdt.managedbuild.config.gnu.mingw.exe.debug.21106709" name="Debug" parent="cdt.managedbuild.config.gnu.mingw.exe.debug">
+          <folderInfo id="cdt.managedbuild.config.gnu.mingw.exe.debug.21106709." name="/" resourcePath="">
+            <toolChain id="cdt.managedbuild.toolchain.gnu.mingw.exe.debug.506006878" name="ESP32-S3 GCC" superClass="cdt.managedbuild.toolchain.gnu.mingw.exe.debug">
+              <targetPlatform id="cdt.managedbuild.target.gnu.platform.mingw.exe.debug.1268257420" name="Debug Platform" superClass="cdt.managedbuild.target.gnu.platform.mingw.exe.debug" />
+              <builder buildPath="${workspace_loc:/TP FINAL CONTROL ASCENSOR INFO2}/Debug" id="cdt.managedbuild.tool.gnu.builder.mingw.base.507308581" managedBuildOn="true" name="CDT Internal Builder.Debug" superClass="cdt.managedbuild.tool.gnu.builder.mingw.base" />
+              <tool id="cdt.managedbuild.tool.gnu.assembler.mingw.exe.debug.1187526358" name="GCC Assembler" superClass="cdt.managedbuild.tool.gnu.assembler.mingw.exe.debug">
+                <inputType id="cdt.managedbuild.tool.gnu.assembler.input.436155676" superClass="cdt.managedbuild.tool.gnu.assembler.input" />
+              </tool>
+              <tool id="cdt.managedbuild.tool.gnu.archiver.mingw.base.2109204609" name="GCC Archiver" superClass="cdt.managedbuild.tool.gnu.archiver.mingw.base" />
+              <tool id="cdt.managedbuild.tool.gnu.cpp.compiler.mingw.exe.debug.1999616707" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.mingw.exe.debug">
+                <option id="gnu.cpp.compiler.mingw.exe.debug.option.optimization.level.820029925" superClass="gnu.cpp.compiler.mingw.exe.debug.option.optimization.level" value="gnu.cpp.compiler.optimization.level.none" valueType="enumerated" />
+                <option defaultValue="gnu.cpp.compiler.debugging.level.max" id="gnu.cpp.compiler.mingw.exe.debug.option.debugging.level.704413773" superClass="gnu.cpp.compiler.mingw.exe.debug.option.debugging.level" valueType="enumerated" />
+              </tool>
+              <tool id="cdt.managedbuild.tool.gnu.c.compiler.mingw.exe.debug.2101322080" name="ESP32-S3 C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.mingw.exe.debug" command="C:\Espressif\tools\xtensa-esp-elf\esp-15.2.0_20251204\xtensa-esp-elf\bin\xtensa-esp32s3-elf-gcc.exe">
+                <option defaultValue="gnu.c.optimization.level.none" id="gnu.c.compiler.mingw.exe.debug.option.optimization.level.794768739" superClass="gnu.c.compiler.mingw.exe.debug.option.optimization.level" valueType="enumerated" />
+                <option defaultValue="gnu.c.debugging.level.max" id="gnu.c.compiler.mingw.exe.debug.option.debugging.level.1892805154" superClass="gnu.c.compiler.mingw.exe.debug.option.debugging.level" valueType="enumerated" />
+                <inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.767222815" superClass="cdt.managedbuild.tool.gnu.c.compiler.input" />
+                <option id="cdt.managedbuild.tool.gnu.c.compiler.mingw.exe.debug.2101322080.includes" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
+                  <listOptionValue builtIn="false" value="C:/Users/matia/espressif-workspace-tp-c/TP FINAL CONTROL ASCENSOR INFO2/build/config" />
+                  <listOptionValue builtIn="false" value="C:/Users/matia/espressif-workspace-tp-c/TP FINAL CONTROL ASCENSOR INFO2" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/esp_libc/platform_include" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/freertos/config/include" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/freertos/config/include/freertos" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/freertos/config/xtensa/include" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/freertos/FreeRTOS-Kernel/include" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/freertos/esp_additions/include" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/esp_hw_support/include" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/esp_hw_support/include/soc" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/esp_hw_support/ldo/include" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/esp_hw_support/debug_probe/include" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/esp_hw_support/etm/include" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/esp_hw_support/mspi/mspi_timing_tuning/include" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/esp_hw_support/mspi/mspi_timing_tuning/tuning_scheme_impl/include" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/esp_hw_support/mspi/mspi_intr/include" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/esp_hw_support/power_supply/include" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/esp_hw_support/modem/include" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/esp_hw_support/include/soc/esp32s3" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/esp_hw_support/port/esp32s3/." />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/esp_hw_support/port/esp32s3/include" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/esp_hw_support/mspi/mspi_timing_tuning/port/esp32s3/." />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/esp_hw_support/mspi/mspi_timing_tuning/port/esp32s3/include" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/heap/include" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/heap/tlsf" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/log/include" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/soc/include" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/soc/esp32s3" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/soc/esp32s3/include" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/soc/esp32s3/register" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/hal/platform_port/include" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/hal/esp32s3/include" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/hal/include" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/esp_rom/include" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/esp_rom/esp32s3/include" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/esp_rom/esp32s3/include/esp32s3" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/esp_rom/esp32s3" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/esp_common/include" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/esp_system/include" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/esp_system/port/soc" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/esp_system/port/include/private" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/esp_stdio/include" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/xtensa/esp32s3/include" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/xtensa/include" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/xtensa/deprecated_include" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/esp_hal_gpio/include" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/esp_hal_gpio/esp32s3/include" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/esp_hal_usb/include" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/esp_hal_usb/esp32s3/include" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/esp_hal_pmu/include" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/esp_hal_pmu/esp32s3/include" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/esp_hal_regi2c/include" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/esp_hal_regi2c/esp32s3/include" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/esp_hal_uart/include" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/esp_hal_uart/esp32s3/include" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/esp_hal_ana_conv/include" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/esp_hal_ana_conv/esp32s3/include" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/esp_hal_dma/include" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/esp_hal_dma/esp32s3/include" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/esp_driver_gpio/include" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/esp_timer/include" />
+                  <listOptionValue builtIn="false" value="C:\Espressif\tools\xtensa-esp-elf\esp-15.2.0_20251204\xtensa-esp-elf\lib\gcc\xtensa-esp-elf\15.2.0\include" />
+                  <listOptionValue builtIn="false" value="C:\Espressif\tools\xtensa-esp-elf\esp-15.2.0_20251204\xtensa-esp-elf\picolibc\xtensa-esp-elf\include" />
+                </option>
+                <option id="cdt.managedbuild.tool.gnu.c.compiler.mingw.exe.debug.2101322080.defines" superClass="gnu.c.compiler.option.preprocessor.def.symbols" valueType="definedSymbols">
+                  <listOptionValue builtIn="false" value="ESP_PLATFORM=1" />
+                </option>
+                <option id="cdt.managedbuild.tool.gnu.c.compiler.mingw.exe.debug.2101322080.c11" superClass="gnu.c.compiler.option.misc.other" value="-std=c11" valueType="string" />
+              </tool>
+              <tool id="cdt.managedbuild.tool.gnu.c.linker.mingw.exe.debug.105982891" name="MinGW C Linker" superClass="cdt.managedbuild.tool.gnu.c.linker.mingw.exe.debug">
+                <inputType id="cdt.managedbuild.tool.gnu.c.linker.input.1978823010" superClass="cdt.managedbuild.tool.gnu.c.linker.input">
+                  <additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)" />
+                  <additionalInput kind="additionalinput" paths="$(LIBS)" />
+                </inputType>
+              </tool>
+              <tool id="cdt.managedbuild.tool.gnu.cpp.linker.mingw.exe.debug.367936709" name="MinGW C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.mingw.exe.debug" />
+            </toolChain>
+          </folderInfo>
+        </configuration>
+      </storageModule>
+      <storageModule moduleId="org.eclipse.cdt.core.externalSettings" />
+    </cconfiguration>
+    <cconfiguration id="cdt.managedbuild.config.gnu.mingw.exe.release.518845483">
+      <storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="cdt.managedbuild.config.gnu.mingw.exe.release.518845483" moduleId="org.eclipse.cdt.core.settings" name="Release">
+        <externalSettings />
+        <extensions>
+          <extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser" />
+          <extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser" />
+          <extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser" />
+          <extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser" />
+        </extensions>
+      </storageModule>
+      <storageModule moduleId="cdtBuildSystem" version="4.0.0">
+        <configuration artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.release" cleanCommand="rm -rf" description="" id="cdt.managedbuild.config.gnu.mingw.exe.release.518845483" name="Release" parent="cdt.managedbuild.config.gnu.mingw.exe.release">
+          <folderInfo id="cdt.managedbuild.config.gnu.mingw.exe.release.518845483." name="/" resourcePath="">
+            <toolChain id="cdt.managedbuild.toolchain.gnu.mingw.exe.release.137900843" name="ESP32-S3 GCC" superClass="cdt.managedbuild.toolchain.gnu.mingw.exe.release">
+              <targetPlatform id="cdt.managedbuild.target.gnu.platform.mingw.exe.release.2090908889" name="Debug Platform" superClass="cdt.managedbuild.target.gnu.platform.mingw.exe.release" />
+              <builder buildPath="${workspace_loc:/TP FINAL CONTROL ASCENSOR INFO2}/Release" id="cdt.managedbuild.tool.gnu.builder.mingw.base.1839314952" managedBuildOn="true" name="CDT Internal Builder.Release" superClass="cdt.managedbuild.tool.gnu.builder.mingw.base" />
+              <tool id="cdt.managedbuild.tool.gnu.assembler.mingw.exe.release.1463544469" name="GCC Assembler" superClass="cdt.managedbuild.tool.gnu.assembler.mingw.exe.release">
+                <inputType id="cdt.managedbuild.tool.gnu.assembler.input.1660314881" superClass="cdt.managedbuild.tool.gnu.assembler.input" />
+              </tool>
+              <tool id="cdt.managedbuild.tool.gnu.archiver.mingw.base.656623963" name="GCC Archiver" superClass="cdt.managedbuild.tool.gnu.archiver.mingw.base" />
+              <tool id="cdt.managedbuild.tool.gnu.cpp.compiler.mingw.exe.release.578820747" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.mingw.exe.release">
+                <option id="gnu.cpp.compiler.mingw.exe.release.option.optimization.level.1355403585" superClass="gnu.cpp.compiler.mingw.exe.release.option.optimization.level" value="gnu.cpp.compiler.optimization.level.most" valueType="enumerated" />
+                <option defaultValue="gnu.cpp.compiler.debugging.level.none" id="gnu.cpp.compiler.mingw.exe.release.option.debugging.level.1509239537" superClass="gnu.cpp.compiler.mingw.exe.release.option.debugging.level" valueType="enumerated" />
+              </tool>
+              <tool id="cdt.managedbuild.tool.gnu.c.compiler.mingw.exe.release.934051948" name="ESP32-S3 C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.mingw.exe.release" command="C:\Espressif\tools\xtensa-esp-elf\esp-15.2.0_20251204\xtensa-esp-elf\bin\xtensa-esp32s3-elf-gcc.exe">
+                <option defaultValue="gnu.c.optimization.level.most" id="gnu.c.compiler.mingw.exe.release.option.optimization.level.1748347507" superClass="gnu.c.compiler.mingw.exe.release.option.optimization.level" valueType="enumerated" />
+                <option defaultValue="gnu.c.debugging.level.none" id="gnu.c.compiler.mingw.exe.release.option.debugging.level.1400945202" superClass="gnu.c.compiler.mingw.exe.release.option.debugging.level" valueType="enumerated" />
+                <inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.1643566154" superClass="cdt.managedbuild.tool.gnu.c.compiler.input" />
+                <option id="cdt.managedbuild.tool.gnu.c.compiler.mingw.exe.release.934051948.includes" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
+                  <listOptionValue builtIn="false" value="C:/Users/matia/espressif-workspace-tp-c/TP FINAL CONTROL ASCENSOR INFO2/build/config" />
+                  <listOptionValue builtIn="false" value="C:/Users/matia/espressif-workspace-tp-c/TP FINAL CONTROL ASCENSOR INFO2" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/esp_libc/platform_include" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/freertos/config/include" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/freertos/config/include/freertos" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/freertos/config/xtensa/include" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/freertos/FreeRTOS-Kernel/include" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/freertos/esp_additions/include" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/esp_hw_support/include" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/esp_hw_support/include/soc" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/esp_hw_support/ldo/include" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/esp_hw_support/debug_probe/include" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/esp_hw_support/etm/include" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/esp_hw_support/mspi/mspi_timing_tuning/include" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/esp_hw_support/mspi/mspi_timing_tuning/tuning_scheme_impl/include" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/esp_hw_support/mspi/mspi_intr/include" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/esp_hw_support/power_supply/include" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/esp_hw_support/modem/include" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/esp_hw_support/include/soc/esp32s3" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/esp_hw_support/port/esp32s3/." />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/esp_hw_support/port/esp32s3/include" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/esp_hw_support/mspi/mspi_timing_tuning/port/esp32s3/." />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/esp_hw_support/mspi/mspi_timing_tuning/port/esp32s3/include" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/heap/include" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/heap/tlsf" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/log/include" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/soc/include" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/soc/esp32s3" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/soc/esp32s3/include" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/soc/esp32s3/register" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/hal/platform_port/include" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/hal/esp32s3/include" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/hal/include" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/esp_rom/include" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/esp_rom/esp32s3/include" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/esp_rom/esp32s3/include/esp32s3" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/esp_rom/esp32s3" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/esp_common/include" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/esp_system/include" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/esp_system/port/soc" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/esp_system/port/include/private" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/esp_stdio/include" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/xtensa/esp32s3/include" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/xtensa/include" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/xtensa/deprecated_include" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/esp_hal_gpio/include" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/esp_hal_gpio/esp32s3/include" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/esp_hal_usb/include" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/esp_hal_usb/esp32s3/include" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/esp_hal_pmu/include" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/esp_hal_pmu/esp32s3/include" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/esp_hal_regi2c/include" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/esp_hal_regi2c/esp32s3/include" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/esp_hal_uart/include" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/esp_hal_uart/esp32s3/include" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/esp_hal_ana_conv/include" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/esp_hal_ana_conv/esp32s3/include" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/esp_hal_dma/include" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/esp_hal_dma/esp32s3/include" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/esp_driver_gpio/include" />
+                  <listOptionValue builtIn="false" value="C:/esp/v6.1/esp-idf/components/esp_timer/include" />
+                  <listOptionValue builtIn="false" value="C:\Espressif\tools\xtensa-esp-elf\esp-15.2.0_20251204\xtensa-esp-elf\lib\gcc\xtensa-esp-elf\15.2.0\include" />
+                  <listOptionValue builtIn="false" value="C:\Espressif\tools\xtensa-esp-elf\esp-15.2.0_20251204\xtensa-esp-elf\picolibc\xtensa-esp-elf\include" />
+                </option>
+                <option id="cdt.managedbuild.tool.gnu.c.compiler.mingw.exe.release.934051948.defines" superClass="gnu.c.compiler.option.preprocessor.def.symbols" valueType="definedSymbols">
+                  <listOptionValue builtIn="false" value="ESP_PLATFORM=1" />
+                </option>
+                <option id="cdt.managedbuild.tool.gnu.c.compiler.mingw.exe.release.934051948.c11" superClass="gnu.c.compiler.option.misc.other" value="-std=c11" valueType="string" />
+              </tool>
+              <tool id="cdt.managedbuild.tool.gnu.c.linker.mingw.exe.release.1930548551" name="MinGW C Linker" superClass="cdt.managedbuild.tool.gnu.c.linker.mingw.exe.release">
+                <inputType id="cdt.managedbuild.tool.gnu.c.linker.input.304046808" superClass="cdt.managedbuild.tool.gnu.c.linker.input">
+                  <additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)" />
+                  <additionalInput kind="additionalinput" paths="$(LIBS)" />
+                </inputType>
+              </tool>
+              <tool id="cdt.managedbuild.tool.gnu.cpp.linker.mingw.exe.release.1491388506" name="MinGW C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.mingw.exe.release" />
+            </toolChain>
+          </folderInfo>
+        </configuration>
+      </storageModule>
+      <storageModule moduleId="org.eclipse.cdt.core.externalSettings" />
+    </cconfiguration>
+  </storageModule>
+  <storageModule moduleId="cdtBuildSystem" version="4.0.0">
+    <project id="TP FINAL CONTROL ASCENSOR INFO2.cdt.managedbuild.target.gnu.mingw.exe.1133984879" name="Executable" projectType="cdt.managedbuild.target.gnu.mingw.exe" />
+  </storageModule>
+  <storageModule moduleId="scannerConfiguration">
+    <autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="" />
+    <scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.mingw.exe.release.518845483;cdt.managedbuild.config.gnu.mingw.exe.release.518845483.;cdt.managedbuild.tool.gnu.c.compiler.mingw.exe.release.934051948;cdt.managedbuild.tool.gnu.c.compiler.input.1643566154">
+      <autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="" />
+    </scannerConfigBuildInfo>
+    <scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.mingw.exe.debug.21106709;cdt.managedbuild.config.gnu.mingw.exe.debug.21106709.;cdt.managedbuild.tool.gnu.c.compiler.mingw.exe.debug.2101322080;cdt.managedbuild.tool.gnu.c.compiler.input.767222815">
+      <autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="" />
+    </scannerConfigBuildInfo>
+  </storageModule>
+  <storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders" />
+  <storageModule moduleId="org.eclipse.cdt.make.core.buildtargets" />
+</cproject>

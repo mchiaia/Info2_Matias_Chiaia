@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<projectDescription>
+  <name>TP FINAL CONTROL ASCENSOR INFO2</name>
+  <comment />
+  <projects />
+  <buildSpec>
+    <buildCommand>
+      <name>org.eclipse.ui.externaltools.ExternalToolBuilder</name>
+      <triggers>full,incremental,</triggers>
+      <arguments>
+        <dictionary>
+          <key>LaunchConfigHandle</key>
+          <value>&lt;project&gt;/.externalToolBuilders/ESP-IDF.launch</value>
+        </dictionary>
+      </arguments>
+    </buildCommand>
+  </buildSpec>
+  <natures>
+    <nature>org.eclipse.cdt.core.cnature</nature>
+  </natures>
+</projectDescription>
