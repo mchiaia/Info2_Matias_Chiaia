@@ -1,10 +1,10 @@
 #include "control_ascensor.h"
-typedef Estado (*FuncionEstado)(Control *, const Entradas *);
-static void detener_motor(Control *control) {
+typedef Estado_t (*FuncionEstado_t)(Control_t *, const Entradas_t *);
+static void detener_motor(Control_t *control) {
     control->salidas.subir = false;
     control->salidas.bajar = false;
 }
-static void actualizar_piso(Control *control) {
+static void actualizar_piso(Control_t *control) {
     if (control->evento_piso == REFERENCIA_PISO_CERO) {
         control->piso_actual = 0;
         control->calibrado = true;
@@ -19,7 +19,7 @@ static void actualizar_piso(Control *control) {
         }
     }
 }
-void inicializar_control(Control *control) {
+void inicializar_control(Control_t *control) {
     int piso;
     control->estado = INICIO;
     control->piso_actual = -1;
@@ -34,9 +34,9 @@ void inicializar_control(Control *control) {
     control->salidas.bajar = false;
     control->salidas.piso = -1;
 }
-Estado actualizar_control(Control *control, const Entradas *entradas) {
+Estado_t actualizar_control(Control_t *control, const Entradas_t *entradas) {
     int piso;
-    static const FuncionEstado tabla_estados[CANTIDAD_ESTADOS] = {
+    static const FuncionEstado_t tabla_estados[CANTIDAD_ESTADOS] = {
         inicio, sincronizando, espera, subiendo, bajando};
     control->evento_piso = actualizar_detector_pisos(
         &control->detector, entradas->sensor1, entradas->sensor2);
@@ -49,13 +49,13 @@ Estado actualizar_control(Control *control, const Entradas *entradas) {
     control->salidas.piso = control->piso_actual;
     return control->estado;
 }
-Estado inicio(Control *control, const Entradas *entradas) {
+Estado_t inicio(Control_t *control, const Entradas_t *entradas) {
     (void)entradas;
     detener_motor(control);
     control->destino = -1;
     return SINCRONIZANDO;
 }
-Estado sincronizando(Control *control, const Entradas *entradas) {
+Estado_t sincronizando(Control_t *control, const Entradas_t *entradas) {
     detener_motor(control);
     if (control->calibrado) {
         control->destino = -1;
@@ -66,7 +66,7 @@ Estado sincronizando(Control *control, const Entradas *entradas) {
     }
     return SINCRONIZANDO;
 }
-Estado espera(Control *control, const Entradas *entradas) {
+Estado_t espera(Control_t *control, const Entradas_t *entradas) {
     int piso;
     detener_motor(control);
     if (control->destino == -1) {
@@ -90,7 +90,7 @@ Estado espera(Control *control, const Entradas *entradas) {
     }
     return control->destino > control->piso_actual ? SUBIENDO : BAJANDO;
 }
-Estado subiendo(Control *control, const Entradas *entradas) {
+Estado_t subiendo(Control_t *control, const Entradas_t *entradas) {
     detener_motor(control);
     if (control->piso_actual == control->destino) {
         control->destino = -1;
@@ -101,7 +101,7 @@ Estado subiendo(Control *control, const Entradas *entradas) {
     }
     return SUBIENDO;
 }
-Estado bajando(Control *control, const Entradas *entradas) {
+Estado_t bajando(Control_t *control, const Entradas_t *entradas) {
     detener_motor(control);
     if (control->piso_actual == control->destino) {
         control->destino = -1;
@@ -112,7 +112,7 @@ Estado bajando(Control *control, const Entradas *entradas) {
     }
     return BAJANDO;
 }
-const char *nombre_estado(Estado estado) {
+const char *nombre_estado(Estado_t estado) {
     static const char *nombres[CANTIDAD_ESTADOS] = {"inicio", "sincronizando", "espera",
                                                     "subiendo", "bajando"};
     if (estado < INICIO || estado >= CANTIDAD_ESTADOS) {

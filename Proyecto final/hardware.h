@@ -5,8 +5,8 @@
 #include <stdint.h>
 
 void hardware_inicializar(void);
-Entradas hardware_leer_entradas(void);
-void hardware_escribir_salidas(const Salidas *salidas);
+Entradas_t hardware_leer_entradas(void);
+void hardware_escribir_salidas(const Salidas_t *salidas);
 uint32_t hardware_tiempo_ms(void);
 
 #endif

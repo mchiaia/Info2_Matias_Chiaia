@@ -1,13 +1,13 @@
 #include "detector_pisos.h"
-void inicializar_detector_pisos(DetectorPisos *detector) {
+void inicializar_detector_pisos(DetectorPisos_t *detector) {
     detector->fase = DETECTOR_ESPERA_NEUTRO; // ambos sensores libres
     detector->inicializado = false;
     detector->sensor1_anterior = false;
     detector->sensor2_anterior = false;
 }
-EventoPiso actualizar_detector_pisos(DetectorPisos *detector, bool sensor1,
+EventoPiso_t actualizar_detector_pisos(DetectorPisos_t *detector, bool sensor1,
                                      bool sensor2) {
-    EventoPiso evento = SIN_EVENTO_PISO;
+    EventoPiso_t evento = SIN_EVENTO_PISO;
     // La marca 11 es exclusiva de cero; se informa una vez al entrar.
     if (sensor1 && sensor2) {
         if (!detector->inicializado || !detector->sensor1_anterior ||

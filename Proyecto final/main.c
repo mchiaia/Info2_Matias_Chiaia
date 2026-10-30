@@ -4,7 +4,7 @@
 #define PERIODO_MS 10
 
 void app_main(void) {
-    Control control;
+    Control_t control;
     uint32_t ultimo_ciclo;
 
     hardware_inicializar();
@@ -16,7 +16,7 @@ void app_main(void) {
 
         if ((uint32_t)(ahora - ultimo_ciclo) >= PERIODO_MS) {
             ultimo_ciclo = ahora;
-            Entradas entradas = hardware_leer_entradas();
+            Entradas_t entradas = hardware_leer_entradas();
             actualizar_control(&control, &entradas);
             hardware_escribir_salidas(&control.salidas);
         }

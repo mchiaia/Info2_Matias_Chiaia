@@ -7,20 +7,20 @@ typedef enum EventoPiso {
     REFERENCIA_PISO_CERO,
     SUBIO_UN_PISO,
     BAJO_UN_PISO
-} EventoPiso;
+} EventoPiso_t;
 typedef enum FaseDetectorPisos {
     DETECTOR_ESPERA_NEUTRO,
     DETECTOR_ESPERA_PRIMER_SENSOR,
     DETECTOR_VIO_SENSOR_1,
     DETECTOR_VIO_SENSOR_2,
     DETECTOR_ESPERA_REARME
-} FaseDetectorPisos;
+} FaseDetectorPisos_t;
 typedef struct DetectorPisos {
-    FaseDetectorPisos fase;
+    FaseDetectorPisos_t fase;
     bool inicializado;
     bool sensor1_anterior;
     bool sensor2_anterior;
-} DetectorPisos;
-void inicializar_detector_pisos(DetectorPisos *detector);
-EventoPiso actualizar_detector_pisos(DetectorPisos *detector, bool sensor1, bool sensor2);
+} DetectorPisos_t;
+void inicializar_detector_pisos(DetectorPisos_t *detector);
+EventoPiso_t actualizar_detector_pisos(DetectorPisos_t *detector, bool sensor1, bool sensor2);
 #endif

@@ -9,12 +9,12 @@ typedef struct Entradas {
     bool sensor2;
     bool seguridad;
     bool pedidos[CANTIDAD_PISOS];
-} Entradas;
+} Entradas_t;
 typedef struct Salidas {
     bool subir;
     bool bajar;
     int piso;
-} Salidas;
+} Salidas_t;
 typedef enum Estado {
     INICIO,
     SINCRONIZANDO,
@@ -22,23 +22,23 @@ typedef enum Estado {
     SUBIENDO,
     BAJANDO,
     CANTIDAD_ESTADOS
-} Estado;
+} Estado_t;
 typedef struct Control {
-    Estado estado;
+    Estado_t estado;
     int piso_actual; // -1 mientras todavia no se conoce el piso.
     int destino;    // -1 cuando no hay un pedido guardado.
     bool calibrado;
     bool pedidos_anteriores[CANTIDAD_PISOS];
-    DetectorPisos detector;
-    EventoPiso evento_piso;
-    Salidas salidas;
-} Control;
-void inicializar_control(Control *control);
-Estado actualizar_control(Control *control, const Entradas *entradas);
-const char *nombre_estado(Estado estado);
-Estado inicio(Control *control, const Entradas *entradas);
-Estado sincronizando(Control *control, const Entradas *entradas);
-Estado espera(Control *control, const Entradas *entradas);
-Estado subiendo(Control *control, const Entradas *entradas);
-Estado bajando(Control *control, const Entradas *entradas);
+    DetectorPisos_t detector;
+    EventoPiso_t evento_piso;
+    Salidas_t salidas;
+} Control_t;
+void inicializar_control(Control_t *control);
+Estado_t actualizar_control(Control_t *control, const Entradas_t *entradas);
+const char *nombre_estado(Estado_t estado);
+Estado_t inicio(Control_t *control, const Entradas_t *entradas);
+Estado_t sincronizando(Control_t *control, const Entradas_t *entradas);
+Estado_t espera(Control_t *control, const Entradas_t *entradas);
+Estado_t subiendo(Control_t *control, const Entradas_t *entradas);
+Estado_t bajando(Control_t *control, const Entradas_t *entradas);
 #endif

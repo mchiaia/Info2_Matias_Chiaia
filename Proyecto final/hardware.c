@@ -23,17 +23,17 @@ typedef struct {
     bool estable;
     bool candidata;
     uint32_t desde_ms;
-} FiltroEntrada;
+} FiltroEntrada_t;
 
-static FiltroEntrada filtros[6];
+static FiltroEntrada_t filtros[6];
 static bool filtros_iniciados = false;
-static FiltroEntrada filtro_seguridad;
+static FiltroEntrada_t filtro_seguridad;
 
 static bool entrada_activa(gpio_num_t pin) {
     return gpio_get_level(pin) == 0;
 }
 
-static bool filtrar(FiltroEntrada *filtro, bool lectura, uint32_t ahora_ms) {
+static bool filtrar(FiltroEntrada_t *filtro, bool lectura, uint32_t ahora_ms) {
     if (lectura != filtro->candidata) {
         filtro->candidata = lectura;
         filtro->desde_ms = ahora_ms;
@@ -76,7 +76,7 @@ void hardware_inicializar(void) {
     ESP_ERROR_CHECK(gpio_config(&config_entradas));
 }
 
-Entradas hardware_leer_entradas(void) {
+Entradas_t hardware_leer_entradas(void) {
     const uint32_t ahora_ms = hardware_tiempo_ms();
     if (!filtros_iniciados) {
         for (size_t i = 0; i < 6; ++i) {
@@ -88,7 +88,7 @@ Entradas hardware_leer_entradas(void) {
         filtros_iniciados = true;
     }
 
-    Entradas entradas = {0};
+    Entradas_t entradas = {0};
     // En el arranque todas las entradas necesitan 30 ms para confirmarse.
     // Luego, seguridad abre de inmediato y requiere 30 ms para habilitarse.
     bool seguridad_raw = entrada_activa(PIN_SEGURIDAD);
@@ -111,7 +111,7 @@ Entradas hardware_leer_entradas(void) {
     return entradas;
 }
 
-void hardware_escribir_salidas(const Salidas *salidas) {
+void hardware_escribir_salidas(const Salidas_t *salidas) {
     // SEG abierto apaga las ordenes de movimiento.
     const bool seguridad_habilitada = entrada_activa(PIN_SEGURIDAD);
     bool subir = salidas->subir && !salidas->bajar && seguridad_habilitada;
