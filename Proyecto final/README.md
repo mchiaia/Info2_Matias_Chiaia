@@ -20,3 +20,7 @@ El sistema es un sistema de viaje persistente sin colectivo, lo que quiere decir
 
 - **Piso_Actual:** Piso en el que se encuentra la cabina.
 - **Destino:** Piso al que debe dirigirse la cabina.
+
+## Video de la simulación
+
+[Ver el video de la simulación del control de ascensor en Wokwi](https://youtu.be/8X7__w_EyjE).
